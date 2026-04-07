@@ -19,6 +19,7 @@ from datetime import datetime
 from enum import Enum
 import io
 import base64
+import os
 
 # ═════════════════════════════════════════════════════════════════════════════
 # CONFIGURATION & CONSTANTS
@@ -382,12 +383,15 @@ def apply_theme():
 # DATA LOADING FUNCTIONS
 # ═════════════════════════════════════════════════════════════════════════════
 
+# Get the directory where the script is located
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
 @st.cache_resource
 def load_ml_model():
     """Load trained ML model and encoder"""
     try:
-        model = joblib.load('disease_predictor_rf.pkl')
-        label_encoder = joblib.load('label_encoder.pkl')
+        model = joblib.load(os.path.join(SCRIPT_DIR, 'disease_predictor_rf.pkl'))
+        label_encoder = joblib.load(os.path.join(SCRIPT_DIR, 'label_encoder.pkl'))
         return model, label_encoder
     except Exception as e:
         st.error(f"Error loading model: {e}")
@@ -397,13 +401,13 @@ def load_ml_model():
 def load_app_data():
     """Load all JSON data files"""
     try:
-        with open('symptom_questions.json', 'r', encoding='utf-8') as f:
+        with open(os.path.join(SCRIPT_DIR, 'symptom_questions.json'), 'r', encoding='utf-8') as f:
             questions = json.load(f)
-        with open('guidance_templates.json', 'r', encoding='utf-8') as f:
+        with open(os.path.join(SCRIPT_DIR, 'guidance_templates.json'), 'r', encoding='utf-8') as f:
             guidance = json.load(f)
-        with open('symptom_list.json', 'r') as f:
+        with open(os.path.join(SCRIPT_DIR, 'symptom_list.json'), 'r') as f:
             symptom_list = json.load(f)
-        with open('disease_info.json', 'r') as f:
+        with open(os.path.join(SCRIPT_DIR, 'disease_info.json'), 'r') as f:
             disease_info = json.load(f)
         return questions, guidance, symptom_list, disease_info
     except Exception as e:
