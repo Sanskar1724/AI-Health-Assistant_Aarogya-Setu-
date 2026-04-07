@@ -50,4 +50,4 @@ wheels/
 
 # Project specific
 .cache/
-*.pkl
+# .pkl files ARE tracked (required for model deployment)
