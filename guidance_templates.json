@@ -1,0 +1,195 @@
+{
+  "common_cold": {
+    "condition_en": "Common Cold",
+    "condition_hi": "सामान्य सर्दी-जुकाम",
+    "self_care": [
+      {"en": "Rest well at home", "hi": "घर पर आराम करें"},
+      {"en": "Drink warm water, soup, tea with ginger", "hi": "गर्म पानी, सूप, अदरक वाली चाय पिएं"},
+      {"en": "Steam inhalation 2-3 times daily", "hi": "दिन में 2-3 बार भाप लें"},
+      {"en": "Gargle with warm salt water", "hi": "गर्म नमक पानी से गरारे करें"}
+    ],
+    "otc_medicines": [
+      {"name": "Paracetamol 500mg", "dose": "1 tablet if fever", "hi": "पैरासिटामोल 500mg - बुखार हो तो 1 गोली"},
+      {"name": "Cetirizine 10mg", "dose": "1 tablet at night for runny nose", "hi": "सेटिरिज़िन 10mg - रात को 1 गोली"}
+    ],
+    "see_doctor_if": [
+      {"en": "Fever above 102°F for more than 3 days", "hi": "3 दिन से ज्यादा 102°F से ऊपर बुखार"},
+      {"en": "Difficulty breathing", "hi": "सांस लेने में तकलीफ"},
+      {"en": "Ear pain", "hi": "कान में दर्द"}
+    ]
+  },
+  "migraine": {
+    "condition_en": "Migraine / Tension Headache",
+    "condition_hi": "माइग्रेन / तनाव वाला सिरदर्द",
+    "self_care": [
+      {"en": "Rest in a dark, quiet room", "hi": "अंधेरे, शांत कमरे में आराम करें"},
+      {"en": "Apply cold cloth on forehead", "hi": "माथे पर ठंडा कपड़ा रखें"},
+      {"en": "Avoid bright lights and loud sounds", "hi": "तेज रोशनी और शोर से बचें"},
+      {"en": "Drink water, stay hydrated", "hi": "पानी पिएं, शरीर में पानी की कमी न हो"}
+    ],
+    "otc_medicines": [
+      {"name": "Paracetamol 500mg", "dose": "1-2 tablets", "hi": "पैरासिटामोल 500mg - 1-2 गोली"},
+      {"name": "Disprin (Aspirin)", "dose": "1 tablet with water", "hi": "डिस्प्रिन - पानी के साथ 1 गोली"}
+    ],
+    "see_doctor_if": [
+      {"en": "Worst headache of your life", "hi": "जीवन का सबसे तेज सिरदर्द"},
+      {"en": "Headache with stiff neck and fever", "hi": "सिरदर्द के साथ गर्दन अकड़ना और बुखार"},
+      {"en": "Headache after head injury", "hi": "सिर में चोट के बाद दर्द"},
+      {"en": "Headache with vision problems", "hi": "सिरदर्द के साथ धुंधला दिखना"}
+    ]
+  },
+  "gastritis": {
+    "condition_en": "Gastritis / Acidity",
+    "condition_hi": "गैस्ट्राइटिस / एसिडिटी",
+    "self_care": [
+      {"en": "Eat small, frequent meals", "hi": "थोड़ा-थोड़ा बार-बार खाएं"},
+      {"en": "Avoid spicy, oily, fried food", "hi": "मसालेदार, तला-भुना खाना न खाएं"},
+      {"en": "Don't lie down right after eating", "hi": "खाने के तुरंत बाद न लेटें"},
+      {"en": "Avoid tea, coffee, alcohol", "hi": "चाय, कॉफी, शराब से बचें"},
+      {"en": "Drink cold milk", "hi": "ठंडा दूध पिएं"}
+    ],
+    "otc_medicines": [
+      {"name": "Antacid (Digene/Gelusil)", "dose": "2 spoons after meals", "hi": "एंटासिड - खाने के बाद 2 चम्मच"},
+      {"name": "Omeprazole 20mg", "dose": "1 capsule before breakfast", "hi": "ओमेप्राज़ोल 20mg - नाश्ते से पहले"}
+    ],
+    "see_doctor_if": [
+      {"en": "Blood in vomit or stool", "hi": "उल्टी या मल में खून"},
+      {"en": "Severe stomach pain", "hi": "बहुत तेज पेट दर्द"},
+      {"en": "Problem persists more than 2 weeks", "hi": "2 हफ्ते से ज्यादा समस्या रहे"}
+    ]
+  },
+  "viral_fever": {
+    "condition_en": "Viral Fever",
+    "condition_hi": "वायरल बुखार",
+    "self_care": [
+      {"en": "Complete bed rest", "hi": "पूरा आराम करें"},
+      {"en": "Drink plenty of fluids - water, ORS, coconut water", "hi": "खूब पानी पिएं - ORS, नारियल पानी"},
+      {"en": "Sponge body with normal water if high fever", "hi": "तेज बुखार में सामान्य पानी से शरीर पोंछें"},
+      {"en": "Eat light food - khichdi, dal, soup", "hi": "हल्का खाना खाएं - खिचड़ी, दाल, सूप"}
+    ],
+    "otc_medicines": [
+      {"name": "Paracetamol 500mg", "dose": "1 tablet every 6 hours if fever", "hi": "पैरासिटामोल 500mg - हर 6 घंटे में 1 गोली"},
+      {"name": "ORS", "dose": "After every loose motion", "hi": "ORS - हर दस्त के बाद"}
+    ],
+    "see_doctor_if": [
+      {"en": "Fever above 103°F", "hi": "बुखार 103°F से ऊपर"},
+      {"en": "Fever more than 5 days", "hi": "5 दिन से ज्यादा बुखार"},
+      {"en": "Rash or red spots on body", "hi": "शरीर पर दाने या लाल धब्बे"},
+      {"en": "Severe headache or body pain", "hi": "बहुत तेज सिरदर्द या बदन दर्द"}
+    ]
+  },
+  "gastroenteritis": {
+    "condition_en": "Stomach Infection / Loose Motions",
+    "condition_hi": "पेट का संक्रमण / दस्त",
+    "self_care": [
+      {"en": "Drink ORS after every loose motion", "hi": "हर दस्त के बाद ORS पिएं"},
+      {"en": "Drink plenty of clean water", "hi": "खूब साफ पानी पिएं"},
+      {"en": "Eat light - rice water, curd rice, banana", "hi": "हल्का खाएं - चावल का पानी, दही-चावल, केला"},
+      {"en": "Wash hands before eating", "hi": "खाने से पहले हाथ धोएं"},
+      {"en": "Avoid outside food", "hi": "बाहर का खाना न खाएं"}
+    ],
+    "otc_medicines": [
+      {"name": "ORS (Oral Rehydration Salt)", "dose": "After every loose motion", "hi": "ORS - हर दस्त के बाद"},
+      {"name": "Zinc tablets", "dose": "1 tablet daily for 10-14 days", "hi": "ज़िंक - 10-14 दिन तक रोज़ 1 गोली"}
+    ],
+    "see_doctor_if": [
+      {"en": "Blood or mucus in stool", "hi": "मल में खून या आंव"},
+      {"en": "More than 6 loose motions per day", "hi": "दिन में 6 से ज्यादा दस्त"},
+      {"en": "Signs of dehydration - very thirsty, dry mouth, less urine", "hi": "पानी की कमी के लक्षण - बहुत प्यास, मुंह सूखना, कम पेशाब"},
+      {"en": "High fever with loose motions", "hi": "दस्त के साथ तेज बुखार"}
+    ]
+  },
+  "skin_infection": {
+    "condition_en": "Skin Infection / Allergy",
+    "condition_hi": "त्वचा का संक्रमण / एलर्जी",
+    "self_care": [
+      {"en": "Keep affected area clean and dry", "hi": "प्रभावित जगह को साफ और सूखा रखें"},
+      {"en": "Wear loose cotton clothes", "hi": "ढीले सूती कपड़े पहनें"},
+      {"en": "Don't scratch", "hi": "खुजाएं नहीं"},
+      {"en": "Apply calamine lotion for itching", "hi": "खुजली के लिए कैलामाइन लोशन लगाएं"}
+    ],
+    "otc_medicines": [
+      {"name": "Cetirizine 10mg", "dose": "1 tablet at night", "hi": "सेटिरिज़िन 10mg - रात को 1 गोली"},
+      {"name": "Calamine lotion", "dose": "Apply on itchy areas", "hi": "कैलामाइन लोशन - खुजली वाली जगह पर लगाएं"}
+    ],
+    "see_doctor_if": [
+      {"en": "Spreading rapidly", "hi": "तेज़ी से फैल रहा हो"},
+      {"en": "Pus or discharge from skin", "hi": "त्वचा से मवाद निकले"},
+      {"en": "Fever with rash", "hi": "दाने के साथ बुखार"},
+      {"en": "Swelling of face or throat", "hi": "चेहरे या गले में सूजन"}
+    ]
+  },
+  "muscle_pain": {
+    "condition_en": "Muscle Pain / Body Ache",
+    "condition_hi": "मांसपेशियों में दर्द / बदन दर्द",
+    "self_care": [
+      {"en": "Rest the painful area", "hi": "दर्द वाली जगह को आराम दें"},
+      {"en": "Apply hot or cold compress", "hi": "गर्म या ठंडी सिकाई करें"},
+      {"en": "Gentle stretching", "hi": "हल्की स्ट्रेचिंग करें"},
+      {"en": "Massage with pain relief balm", "hi": "दर्द निवारक बाम से मालिश करें"}
+    ],
+    "otc_medicines": [
+      {"name": "Paracetamol 500mg", "dose": "1 tablet for pain", "hi": "पैरासिटामोल 500mg - दर्द के लिए 1 गोली"},
+      {"name": "Ibuprofen 400mg", "dose": "1 tablet after food (avoid if stomach problem)", "hi": "आइबुप्रोफेन - खाने के बाद (पेट की समस्या हो तो न लें)"},
+      {"name": "Volini/Moov", "dose": "Apply on painful area", "hi": "वोलिनी/मूव - दर्द वाली जगह पर लगाएं"}
+    ],
+    "see_doctor_if": [
+      {"en": "Pain with fever", "hi": "दर्द के साथ बुखार"},
+      {"en": "Severe pain not relieved by medicines", "hi": "दवाई से भी तेज़ दर्द कम न हो"},
+      {"en": "Swelling or redness", "hi": "सूजन या लालिमा"},
+      {"en": "Unable to move the affected part", "hi": "प्रभावित हिस्सा हिला न पाएं"}
+    ]
+  },
+  "allergy": {
+    "condition_en": "Allergy",
+    "condition_hi": "एलर्जी",
+    "self_care": [
+      {"en": "Identify and avoid the allergen", "hi": "एलर्जी का कारण पता करें और उससे बचें"},
+      {"en": "Keep windows closed during pollen season", "hi": "पराग के मौसम में खिड़कियां बंद रखें"},
+      {"en": "Wash hands and face after coming from outside", "hi": "बाहर से आने पर हाथ-मुंह धोएं"},
+      {"en": "Use clean bedsheets", "hi": "साफ चादर का उपयोग करें"}
+    ],
+    "otc_medicines": [
+      {"name": "Cetirizine 10mg", "dose": "1 tablet daily", "hi": "सेटिरिज़िन 10mg - रोज़ 1 गोली"},
+      {"name": "Loratadine 10mg", "dose": "1 tablet daily", "hi": "लोराटाडीन 10mg - रोज़ 1 गोली"}
+    ],
+    "see_doctor_if": [
+      {"en": "Difficulty breathing", "hi": "सांस लेने में तकलीफ"},
+      {"en": "Swelling of face, lips, tongue", "hi": "चेहरे, होंठ, जीभ में सूजन"},
+      {"en": "Symptoms getting worse", "hi": "लक्षण बढ़ रहे हों"}
+    ]
+  },
+  "general_weakness": {
+    "condition_en": "Weakness / Fatigue",
+    "condition_hi": "कमज़ोरी / थकान",
+    "self_care": [
+      {"en": "Get enough sleep (7-8 hours)", "hi": "पूरी नींद लें (7-8 घंटे)"},
+      {"en": "Eat nutritious food - dal, vegetables, fruits", "hi": "पौष्टिक खाना खाएं - दाल, सब्ज़ी, फल"},
+      {"en": "Drink plenty of water", "hi": "खूब पानी पिएं"},
+      {"en": "Light exercise or walking", "hi": "हल्की कसरत या टहलना"}
+    ],
+    "otc_medicines": [
+      {"name": "Multivitamin", "dose": "1 tablet daily", "hi": "मल्टीविटामिन - रोज़ 1 गोली"},
+      {"name": "Iron supplement (if pale)", "dose": "1 tablet daily with orange juice", "hi": "आयरन - संतरे के रस के साथ रोज़ 1 गोली"}
+    ],
+    "see_doctor_if": [
+      {"en": "Weakness lasting more than 2 weeks", "hi": "2 हफ्ते से ज्यादा कमज़ोरी"},
+      {"en": "Unexplained weight loss", "hi": "बिना कारण वज़न कम होना"},
+      {"en": "Fainting or dizziness", "hi": "बेहोशी या चक्कर आना"},
+      {"en": "Very pale skin", "hi": "त्वचा बहुत पीली"}
+    ]
+  },
+  "urgent_care": {
+    "condition_en": "⚠️ URGENT - Please See Doctor Immediately",
+    "condition_hi": "⚠️ जरूरी - कृपया तुरंत डॉक्टर से मिलें",
+    "self_care": [
+      {"en": "Your symptoms need immediate medical attention", "hi": "आपके लक्षणों को तुरंत चिकित्सा की जरूरत है"},
+      {"en": "Please visit the nearest health center", "hi": "कृपया नज़दीकी स्वास्थ्य केंद्र जाएं"},
+      {"en": "If possible, call for emergency help", "hi": "अगर संभव हो, आपातकालीन मदद के लिए कॉल करें"}
+    ],
+    "otc_medicines": [],
+    "see_doctor_if": [
+      {"en": "Do not delay - seek help now", "hi": "देर न करें - अभी मदद लें"}
+    ]
+  }
+}

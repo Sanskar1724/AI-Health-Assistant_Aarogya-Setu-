@@ -1,0 +1,432 @@
+{
+  "headache": {
+    "name_en": "Headache",
+    "name_hi": "सिरदर्द",
+    "icon": "🤕",
+    "questions": [
+      {
+        "id": "severity",
+        "question_en": "How severe is your headache?",
+        "question_hi": "सिरदर्द कितना तेज है?",
+        "type": "select",
+        "options": [
+          {"value": "mild", "label_en": "Mild (can do normal work)", "label_hi": "हल्का (काम कर सकते हैं)", "weight": 1},
+          {"value": "moderate", "label_en": "Moderate (difficult to work)", "label_hi": "मध्यम (काम करना मुश्किल)", "weight": 2},
+          {"value": "severe", "label_en": "Severe (cannot do anything)", "label_hi": "तेज (कुछ नहीं कर सकते)", "weight": 3}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had this headache?",
+        "question_hi": "सिरदर्द कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "hours", "label_en": "Few hours", "label_hi": "कुछ घंटे", "weight": 1},
+          {"value": "1day", "label_en": "1 day", "label_hi": "1 दिन", "weight": 1},
+          {"value": "2-3days", "label_en": "2-3 days", "label_hi": "2-3 दिन", "weight": 2},
+          {"value": "week", "label_en": "More than a week", "label_hi": "एक हफ्ते से ज्यादा", "weight": 3}
+        ]
+      },
+      {
+        "id": "location",
+        "question_en": "Where is the pain?",
+        "question_hi": "दर्द कहाँ है?",
+        "type": "select",
+        "options": [
+          {"value": "forehead", "label_en": "Forehead", "label_hi": "माथे पर", "weight": 1},
+          {"value": "one_side", "label_en": "One side of head", "label_hi": "एक तरफ", "weight": 2},
+          {"value": "both_sides", "label_en": "Both sides", "label_hi": "दोनों तरफ", "weight": 1},
+          {"value": "back_head", "label_en": "Back of head", "label_hi": "सिर के पीछे", "weight": 2},
+          {"value": "whole_head", "label_en": "Whole head", "label_hi": "पूरे सिर में", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have any of these?",
+        "question_hi": "क्या ये भी हैं?",
+        "type": "multiselect",
+        "options": [
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "high_fever"},
+          {"value": "nausea", "label_en": "Nausea/Vomiting", "label_hi": "जी मिचलाना/उल्टी", "symptom": "nausea"},
+          {"value": "light_sensitivity", "label_en": "Light bothers eyes", "label_hi": "रोशनी से तकलीफ", "symptom": "visual_disturbances"},
+          {"value": "neck_stiff", "label_en": "Stiff neck", "label_hi": "गर्दन अकड़ना", "symptom": "neck_pain"},
+          {"value": "cold", "label_en": "Cold/Runny nose", "label_hi": "सर्दी/नाक बहना", "symptom": "continuous_sneezing"},
+          {"value": "none", "label_en": "None of these", "label_hi": "इनमें से कोई नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["neck_stiff", "severe"],
+    "base_symptoms": ["headache"]
+  },
+  "fever": {
+    "name_en": "Fever",
+    "name_hi": "बुखार",
+    "icon": "🤒",
+    "questions": [
+      {
+        "id": "severity",
+        "question_en": "How high is the fever?",
+        "question_hi": "बुखार कितना है?",
+        "type": "select",
+        "options": [
+          {"value": "low", "label_en": "Low (99-100°F)", "label_hi": "हल्का (99-100°F)", "weight": 1},
+          {"value": "moderate", "label_en": "Moderate (100-102°F)", "label_hi": "मध्यम (100-102°F)", "weight": 2},
+          {"value": "high", "label_en": "High (102°F+)", "label_hi": "तेज (102°F+)", "weight": 3}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had fever?",
+        "question_hi": "बुखार कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "today", "label_en": "Started today", "label_hi": "आज से", "weight": 1},
+          {"value": "1-2days", "label_en": "1-2 days", "label_hi": "1-2 दिन", "weight": 1},
+          {"value": "3-5days", "label_en": "3-5 days", "label_hi": "3-5 दिन", "weight": 2},
+          {"value": "week", "label_en": "More than a week", "label_hi": "एक हफ्ते से ज्यादा", "weight": 3}
+        ]
+      },
+      {
+        "id": "pattern",
+        "question_en": "How does the fever come?",
+        "question_hi": "बुखार कैसे आता है?",
+        "type": "select",
+        "options": [
+          {"value": "continuous", "label_en": "Stays all day", "label_hi": "पूरे दिन रहता है", "weight": 2},
+          {"value": "evening", "label_en": "Comes in evening", "label_hi": "शाम को आता है", "weight": 2},
+          {"value": "alternate", "label_en": "Comes and goes", "label_hi": "आता-जाता है", "weight": 3},
+          {"value": "with_chills", "label_en": "With shivering/chills", "label_hi": "कंपकंपी के साथ", "weight": 3}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have any of these?",
+        "question_hi": "क्या ये भी हैं?",
+        "type": "multiselect",
+        "options": [
+          {"value": "headache", "label_en": "Headache", "label_hi": "सिरदर्द", "symptom": "headache"},
+          {"value": "body_pain", "label_en": "Body pain", "label_hi": "बदन दर्द", "symptom": "muscle_pain"},
+          {"value": "cough", "label_en": "Cough", "label_hi": "खांसी", "symptom": "cough"},
+          {"value": "cold", "label_en": "Cold/Runny nose", "label_hi": "सर्दी/नाक बहना", "symptom": "continuous_sneezing"},
+          {"value": "vomiting", "label_en": "Vomiting", "label_hi": "उल्टी", "symptom": "vomiting"},
+          {"value": "rash", "label_en": "Skin rash/spots", "label_hi": "दाने/चकत्ते", "symptom": "skin_rash"},
+          {"value": "none", "label_en": "None of these", "label_hi": "इनमें से कोई नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["high", "week", "rash"],
+    "base_symptoms": ["high_fever"]
+  },
+  "stomach_pain": {
+    "name_en": "Stomach Pain",
+    "name_hi": "पेट दर्द",
+    "icon": "🤢",
+    "questions": [
+      {
+        "id": "severity",
+        "question_en": "How severe is the pain?",
+        "question_hi": "दर्द कितना तेज है?",
+        "type": "select",
+        "options": [
+          {"value": "mild", "label_en": "Mild (bearable)", "label_hi": "हल्का (सह सकते हैं)", "weight": 1},
+          {"value": "moderate", "label_en": "Moderate", "label_hi": "मध्यम", "weight": 2},
+          {"value": "severe", "label_en": "Severe (very painful)", "label_hi": "तेज (बहुत दर्द)", "weight": 3}
+        ]
+      },
+      {
+        "id": "location",
+        "question_en": "Where is the pain?",
+        "question_hi": "दर्द कहाँ है?",
+        "type": "select",
+        "options": [
+          {"value": "upper", "label_en": "Upper stomach (near chest)", "label_hi": "ऊपर (छाती के पास)", "weight": 2},
+          {"value": "around_navel", "label_en": "Around navel", "label_hi": "नाभि के आसपास", "weight": 1},
+          {"value": "lower", "label_en": "Lower stomach", "label_hi": "नीचे पेट में", "weight": 2},
+          {"value": "right_side", "label_en": "Right side", "label_hi": "दाईं तरफ", "weight": 3},
+          {"value": "whole", "label_en": "Whole stomach", "label_hi": "पूरे पेट में", "weight": 2}
+        ]
+      },
+      {
+        "id": "type",
+        "question_en": "What type of pain?",
+        "question_hi": "दर्द कैसा है?",
+        "type": "select",
+        "options": [
+          {"value": "burning", "label_en": "Burning", "label_hi": "जलन वाला", "weight": 2},
+          {"value": "cramping", "label_en": "Cramping/Twisting", "label_hi": "मरोड़/ऐंठन", "weight": 2},
+          {"value": "dull", "label_en": "Dull/Heavy", "label_hi": "भारीपन", "weight": 1},
+          {"value": "sharp", "label_en": "Sharp/Stabbing", "label_hi": "तेज चुभन", "weight": 3}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have any of these?",
+        "question_hi": "क्या ये भी हैं?",
+        "type": "multiselect",
+        "options": [
+          {"value": "vomiting", "label_en": "Vomiting", "label_hi": "उल्टी", "symptom": "vomiting"},
+          {"value": "loose_motion", "label_en": "Loose motions", "label_hi": "दस्त", "symptom": "diarrhoea"},
+          {"value": "constipation", "label_en": "Constipation", "label_hi": "कब्ज", "symptom": "constipation"},
+          {"value": "gas", "label_en": "Gas/Bloating", "label_hi": "गैस/फूलना", "symptom": "acidity"},
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "high_fever"},
+          {"value": "none", "label_en": "None of these", "label_hi": "इनमें से कोई नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["severe", "right_side", "sharp"],
+    "base_symptoms": ["stomach_pain", "abdominal_pain"]
+  },
+  "cough": {
+    "name_en": "Cough",
+    "name_hi": "खांसी",
+    "icon": "🫁",
+    "questions": [
+      {
+        "id": "type",
+        "question_en": "What type of cough?",
+        "question_hi": "खांसी कैसी है?",
+        "type": "select",
+        "options": [
+          {"value": "dry", "label_en": "Dry cough (no phlegm)", "label_hi": "सूखी खांसी", "weight": 1},
+          {"value": "wet", "label_en": "With phlegm (white/clear)", "label_hi": "बलगम वाली (सफेद)", "weight": 2},
+          {"value": "yellow_green", "label_en": "Yellow/Green phlegm", "label_hi": "पीला/हरा बलगम", "weight": 3},
+          {"value": "blood", "label_en": "Blood in cough", "label_hi": "खून आना", "weight": 5}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had cough?",
+        "question_hi": "खांसी कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "few_days", "label_en": "Few days", "label_hi": "कुछ दिन", "weight": 1},
+          {"value": "1week", "label_en": "About 1 week", "label_hi": "करीब 1 हफ्ता", "weight": 1},
+          {"value": "2-3weeks", "label_en": "2-3 weeks", "label_hi": "2-3 हफ्ते", "weight": 2},
+          {"value": "month", "label_en": "More than a month", "label_hi": "1 महीने से ज्यादा", "weight": 3}
+        ]
+      },
+      {
+        "id": "timing",
+        "question_en": "When is cough worse?",
+        "question_hi": "खांसी कब ज्यादा होती है?",
+        "type": "select",
+        "options": [
+          {"value": "night", "label_en": "At night", "label_hi": "रात को", "weight": 2},
+          {"value": "morning", "label_en": "In morning", "label_hi": "सुबह", "weight": 2},
+          {"value": "all_day", "label_en": "All day", "label_hi": "पूरे दिन", "weight": 1},
+          {"value": "after_eating", "label_en": "After eating", "label_hi": "खाने के बाद", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have any of these?",
+        "question_hi": "क्या ये भी हैं?",
+        "type": "multiselect",
+        "options": [
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "high_fever"},
+          {"value": "cold", "label_en": "Cold/Runny nose", "label_hi": "सर्दी/नाक बहना", "symptom": "continuous_sneezing"},
+          {"value": "breathless", "label_en": "Difficulty breathing", "label_hi": "सांस लेने में तकलीफ", "symptom": "breathlessness"},
+          {"value": "chest_pain", "label_en": "Chest pain", "label_hi": "छाती में दर्द", "symptom": "chest_pain"},
+          {"value": "weight_loss", "label_en": "Weight loss", "label_hi": "वजन कम होना", "symptom": "weight_loss"},
+          {"value": "none", "label_en": "None of these", "label_hi": "इनमें से कोई नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["blood", "month", "breathless", "weight_loss"],
+    "base_symptoms": ["cough"]
+  },
+  "body_pain": {
+    "name_en": "Body Pain / Weakness",
+    "name_hi": "बदन दर्द / कमज़ोरी",
+    "icon": "😫",
+    "questions": [
+      {
+        "id": "type",
+        "question_en": "What are you feeling?",
+        "question_hi": "आपको क्या महसूस हो रहा है?",
+        "type": "select",
+        "options": [
+          {"value": "body_pain", "label_en": "Body pain/aches", "label_hi": "बदन दर्द", "weight": 2},
+          {"value": "weakness", "label_en": "Weakness/Tiredness", "label_hi": "कमज़ोरी/थकान", "weight": 1},
+          {"value": "joint_pain", "label_en": "Joint pain", "label_hi": "जोड़ों में दर्द", "weight": 2},
+          {"value": "both", "label_en": "Both pain and weakness", "label_hi": "दर्द और कमज़ोरी दोनों", "weight": 3}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you felt this?",
+        "question_hi": "यह कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "today", "label_en": "Started today", "label_hi": "आज से", "weight": 1},
+          {"value": "few_days", "label_en": "Few days", "label_hi": "कुछ दिन", "weight": 1},
+          {"value": "week", "label_en": "About a week", "label_hi": "करीब 1 हफ्ता", "weight": 2},
+          {"value": "long", "label_en": "Long time", "label_hi": "काफी समय से", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have any of these?",
+        "question_hi": "क्या ये भी हैं?",
+        "type": "multiselect",
+        "options": [
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "high_fever"},
+          {"value": "headache", "label_en": "Headache", "label_hi": "सिरदर्द", "symptom": "headache"},
+          {"value": "cold", "label_en": "Cold/Cough", "label_hi": "सर्दी/खांसी", "symptom": "cough"},
+          {"value": "loss_appetite", "label_en": "No appetite", "label_hi": "भूख नहीं", "symptom": "loss_of_appetite"},
+          {"value": "none", "label_en": "None of these", "label_hi": "इनमें से कोई नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": [],
+    "base_symptoms": ["muscle_pain", "fatigue", "joint_pain"]
+  },
+  "skin_problem": {
+    "name_en": "Skin Problem",
+    "name_hi": "त्वचा की समस्या",
+    "icon": "🔴",
+    "questions": [
+      {
+        "id": "type",
+        "question_en": "What is the problem?",
+        "question_hi": "क्या समस्या है?",
+        "type": "select",
+        "options": [
+          {"value": "itching", "label_en": "Itching", "label_hi": "खुजली", "weight": 1},
+          {"value": "rash", "label_en": "Rash/Red patches", "label_hi": "दाने/लाल धब्बे", "weight": 2},
+          {"value": "pimples", "label_en": "Pimples/Boils", "label_hi": "फुंसी/फोड़े", "weight": 2},
+          {"value": "dry", "label_en": "Dry/Flaky skin", "label_hi": "सूखी/पपड़ीदार", "weight": 1},
+          {"value": "discolor", "label_en": "Color change", "label_hi": "रंग बदलना", "weight": 2}
+        ]
+      },
+      {
+        "id": "location",
+        "question_en": "Where is the problem?",
+        "question_hi": "कहाँ है?",
+        "type": "select",
+        "options": [
+          {"value": "face", "label_en": "Face", "label_hi": "चेहरे पर", "weight": 1},
+          {"value": "hands_feet", "label_en": "Hands/Feet", "label_hi": "हाथ/पैर", "weight": 1},
+          {"value": "body", "label_en": "Body/Trunk", "label_hi": "धड़ पर", "weight": 1},
+          {"value": "whole", "label_en": "Whole body", "label_hi": "पूरे शरीर पर", "weight": 2}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had this?",
+        "question_hi": "यह कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "few_days", "label_en": "Few days", "label_hi": "कुछ दिन", "weight": 1},
+          {"value": "weeks", "label_en": "Few weeks", "label_hi": "कुछ हफ्ते", "weight": 2},
+          {"value": "months", "label_en": "Months", "label_hi": "महीनों से", "weight": 2},
+          {"value": "recurring", "label_en": "Keeps coming back", "label_hi": "बार-बार आता है", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have?",
+        "question_hi": "क्या ये भी है?",
+        "type": "multiselect",
+        "options": [
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "high_fever"},
+          {"value": "pain", "label_en": "Pain in affected area", "label_hi": "उस जगह दर्द", "symptom": "skin_rash"},
+          {"value": "none", "label_en": "None", "label_hi": "कुछ नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["whole"],
+    "base_symptoms": ["itching", "skin_rash", "nodal_skin_eruptions"]
+  },
+  "cold_flu": {
+    "name_en": "Cold / Flu",
+    "name_hi": "सर्दी-जुकाम",
+    "icon": "🤧",
+    "questions": [
+      {
+        "id": "main_symptom",
+        "question_en": "What is bothering you most?",
+        "question_hi": "सबसे ज्यादा तकलीफ किससे है?",
+        "type": "select",
+        "options": [
+          {"value": "runny_nose", "label_en": "Runny/Blocked nose", "label_hi": "नाक बहना/बंद", "weight": 1},
+          {"value": "sneezing", "label_en": "Sneezing", "label_hi": "छींक आना", "weight": 1},
+          {"value": "throat", "label_en": "Sore throat", "label_hi": "गले में खराश", "weight": 2},
+          {"value": "all", "label_en": "All of above", "label_hi": "सभी", "weight": 2}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had this?",
+        "question_hi": "यह कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "1-2days", "label_en": "1-2 days", "label_hi": "1-2 दिन", "weight": 1},
+          {"value": "3-5days", "label_en": "3-5 days", "label_hi": "3-5 दिन", "weight": 1},
+          {"value": "week", "label_en": "About a week", "label_hi": "करीब 1 हफ्ता", "weight": 2},
+          {"value": "more", "label_en": "More than a week", "label_hi": "1 हफ्ते से ज्यादा", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have?",
+        "question_hi": "क्या ये भी है?",
+        "type": "multiselect",
+        "options": [
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "mild_fever"},
+          {"value": "headache", "label_en": "Headache", "label_hi": "सिरदर्द", "symptom": "headache"},
+          {"value": "body_pain", "label_en": "Body pain", "label_hi": "बदन दर्द", "symptom": "muscle_pain"},
+          {"value": "cough", "label_en": "Cough", "label_hi": "खांसी", "symptom": "cough"},
+          {"value": "none", "label_en": "None", "label_hi": "कुछ नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": [],
+    "base_symptoms": ["continuous_sneezing", "chills", "shivering"]
+  },
+  "digestion": {
+    "name_en": "Digestion Problem",
+    "name_hi": "पाचन की समस्या",
+    "icon": "🍽️",
+    "questions": [
+      {
+        "id": "main_issue",
+        "question_en": "What is the main problem?",
+        "question_hi": "मुख्य समस्या क्या है?",
+        "type": "select",
+        "options": [
+          {"value": "acidity", "label_en": "Acidity/Heartburn", "label_hi": "एसिडिटी/सीने में जलन", "weight": 1},
+          {"value": "gas", "label_en": "Gas/Bloating", "label_hi": "गैस/पेट फूलना", "weight": 1},
+          {"value": "constipation", "label_en": "Constipation", "label_hi": "कब्ज", "weight": 1},
+          {"value": "loose_motion", "label_en": "Loose motions", "label_hi": "दस्त", "weight": 2},
+          {"value": "nausea", "label_en": "Nausea/Vomiting", "label_hi": "जी मिचलाना/उल्टी", "weight": 2}
+        ]
+      },
+      {
+        "id": "duration",
+        "question_en": "How long have you had this?",
+        "question_hi": "यह कब से है?",
+        "type": "select",
+        "options": [
+          {"value": "today", "label_en": "Started today", "label_hi": "आज से", "weight": 1},
+          {"value": "few_days", "label_en": "Few days", "label_hi": "कुछ दिन", "weight": 1},
+          {"value": "frequent", "label_en": "Happens frequently", "label_hi": "बार-बार होता है", "weight": 2}
+        ]
+      },
+      {
+        "id": "associated",
+        "question_en": "Do you also have?",
+        "question_hi": "क्या ये भी है?",
+        "type": "multiselect",
+        "options": [
+          {"value": "stomach_pain", "label_en": "Stomach pain", "label_hi": "पेट दर्द", "symptom": "stomach_pain"},
+          {"value": "fever", "label_en": "Fever", "label_hi": "बुखार", "symptom": "mild_fever"},
+          {"value": "no_appetite", "label_en": "No appetite", "label_hi": "भूख नहीं", "symptom": "loss_of_appetite"},
+          {"value": "none", "label_en": "None", "label_hi": "कुछ नहीं", "symptom": null}
+        ]
+      }
+    ],
+    "red_flags": ["loose_motion"],
+    "base_symptoms": ["acidity", "indigestion", "vomiting", "constipation", "diarrhoea"]
+  }
+}
