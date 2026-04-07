@@ -41,7 +41,6 @@ wheels/
 # Streamlit
 .streamlit/secrets.toml
 .streamlit/cache/
-.streamlit/
 
 # OS
 *.log

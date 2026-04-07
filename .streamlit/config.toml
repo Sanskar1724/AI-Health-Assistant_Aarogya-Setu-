@@ -1,0 +1,19 @@
+[logger]
+level = "info"
+
+[client]
+showErrorDetails = true
+maxUploadSize = 500
+
+[theme]
+primaryColor = "#0D5C2F"
+backgroundColor = "#FFF8E7"
+secondaryBackgroundColor = "#E8F4F0"
+textColor = "#1a1a1a"
+font = "sans serif"
+
+[server]
+runOnSave = true
+headless = true
+port = 8501
+enableXsrfProtection = true
