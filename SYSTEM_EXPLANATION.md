@@ -8,9 +8,10 @@
 5. [File Structure](#file-structure)
 6. [Training Process](#training-process)
 7. [User Interface Design](#user-interface-design)
-8. [Data Flow Diagram](#data-flow-diagram)
-9. [Key Features](#key-features)
-10. [How to Run](#how-to-run)
+8. [Report Generation & Download](#report-generation--download)
+9. [Data Flow Diagram](#data-flow-diagram)
+10. [Key Features](#key-features)
+11. [How to Run](#how-to-run)
 
 ---
 
